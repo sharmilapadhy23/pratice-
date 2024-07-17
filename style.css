@@ -1,0 +1,65 @@
+html,body{
+width: 100%;
+height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    background-color: #dadada;
+}
+#centre {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    top:0;
+}
+.imagecontainer  {
+    overflow: hidden;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top:0;
+}
+img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+#one{
+    width: 0%;
+}
+.text {
+    position: absolute;
+    bottom: -10%;
+    left: 2%;
+    overflow: hidden; 
+    width: 500px;
+    height: 150px;
+    z-index: 999;
+    color: #EEEDED;
+}
+
+.text h1 {
+    font-size: 5.1vw;
+    position: absolute;
+    top: 100px;
+    text-wrap:nowrap;
+}
+/* Adjusting scrollbar width and color */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Styling the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #fbc2eb; /* Pastel pink */
+    border-radius: 10px;
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a6c1ee; /* Light blue */
+}
